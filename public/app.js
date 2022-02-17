@@ -81,7 +81,7 @@
     if (username) {
       return username;
     }
-    username = 'user-' + getRandomString();
+    username = 'user-' + getRandomString() + ':';
     localStorage.username = username;
 
     return username;
@@ -152,7 +152,7 @@
         messages,
         container
       });
-    }, 5000);
+    }, 3000);
   };
 
   const onload = callback => {
